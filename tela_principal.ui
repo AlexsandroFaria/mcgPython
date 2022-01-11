@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TelaPrincipal</class>
+ <widget class="QMainWindow" name="TelaPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>971</width>
+    <height>690</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>_img/icone_principal.png</normaloff>_img/icone_principal.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>_img/principal.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(138, 0, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;Mestre:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_nome">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>971</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuUsu_rios">
+    <property name="title">
+     <string>Usuários</string>
+    </property>
+    <addaction name="menu_cadastro_usuario"/>
+    <addaction name="menu_consulta_usuarios"/>
+    <addaction name="separator"/>
+    <addaction name="menu_sair"/>
+   </widget>
+   <widget class="QMenu" name="menuPersonagens">
+    <property name="title">
+     <string>Personagens</string>
+    </property>
+    <addaction name="menu_cadastro_personagem"/>
+    <addaction name="menu_consultar_personagem"/>
+    <addaction name="menu_cadastro_classes"/>
+    <addaction name="menu_cadastro_raca"/>
+   </widget>
+   <widget class="QMenu" name="menuMonstros">
+    <property name="title">
+     <string>Monstros</string>
+    </property>
+    <addaction name="menu_cadastrar_monstros"/>
+    <addaction name="menu_consultar_monstros"/>
+   </widget>
+   <widget class="QMenu" name="menuDados">
+    <property name="title">
+     <string>Dados</string>
+    </property>
+    <addaction name="menu_rolar_dados"/>
+   </widget>
+   <widget class="QMenu" name="menuCombate">
+    <property name="title">
+     <string>Combate</string>
+    </property>
+    <addaction name="menu_combate"/>
+    <addaction name="menu_nivel_desafio"/>
+   </widget>
+   <widget class="QMenu" name="menuSobre">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="menu_sobre"/>
+   </widget>
+   <addaction name="menuUsu_rios"/>
+   <addaction name="menuPersonagens"/>
+   <addaction name="menuMonstros"/>
+   <addaction name="menuDados"/>
+   <addaction name="menuCombate"/>
+   <addaction name="menuSobre"/>
+  </widget>
+  <action name="menu_cadastro_usuario">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/usuario.png</normaloff>_img/usuario.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastro de Usuários</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="menu_consulta_usuarios">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/consulta_usuario.png</normaloff>_img/consulta_usuario.png</iconset>
+   </property>
+   <property name="text">
+    <string>Consulta de Usuários</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="menu_sair">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/sair.png</normaloff>_img/sair.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="menu_cadastro_personagem">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/personagem.png</normaloff>_img/personagem.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastro de Personagens</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="menu_consultar_personagem">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/consultar_personagem.png</normaloff>_img/consultar_personagem.png</iconset>
+   </property>
+   <property name="text">
+    <string>Consultar Personagens</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="menu_cadastro_classes">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/escudo.png</normaloff>_img/escudo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastro de Classes</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="menu_cadastro_raca">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/raca.png</normaloff>_img/raca.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastro de Raça</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="menu_cadastrar_monstros">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/monstros.png</normaloff>_img/monstros.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastrar Monstros</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="menu_consultar_monstros">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/consulta_monstros.png</normaloff>_img/consulta_monstros.png</iconset>
+   </property>
+   <property name="text">
+    <string>Consultar Monstros</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="menu_rolar_dados">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/dado.png</normaloff>_img/dado.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rolar Dados</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="menu_combate">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/batalha.png</normaloff>_img/batalha.png</iconset>
+   </property>
+   <property name="text">
+    <string>Combate</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="menu_nivel_desafio">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/nivel.png</normaloff>_img/nivel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nível de desafios</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="menu_sobre">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/sobre.png</normaloff>_img/sobre.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

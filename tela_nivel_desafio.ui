@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NivelDesafio</class>
+ <widget class="QWidget" name="NivelDesafio">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1174</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Users/alafaria/.designer/backup/_img/icone_principal.png</normaloff>../../Users/alafaria/.designer/backup/_img/icone_principal.png</iconset>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1171</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1171</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>_img/banner_nivel.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Selecionar Peronagem:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combo_selecionar_personagem">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>140</y>
+     <width>201</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Selecionar</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="btn_inserir">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>140</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: rgb(85, 170, 255);
+}
+QPushButton:hover{
+	
+	background-color: rgb(0, 85, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>Inserir</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/cadastrar.png</normaloff>_img/cadastrar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabela_nivel_usuario">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>651</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Nome</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Elephant</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nível</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Elephant</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nivel Fácil</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Elephant</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nível Médio</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Elephant</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nível Dificil</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Elephant</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nível Mortal</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Elephant</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </column>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>651</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="title">
+    <string>Resultado</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>631</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Fácil</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Médio</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Difícil</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Mortal</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>631</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="txt_nivel_facil">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid blue;
+border-radius: 5px</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="txt_nivel_medio">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid blue;
+border-radius: 5px</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="txt_nivel_dificil">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid blue;
+border-radius: 5px</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="txt_nivel_mortal">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid blue;
+border-radius: 5px</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>460</y>
+     <width>651</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QLabel" name="label_12">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_limpar_lista">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: rgb(85, 170, 255);
+}
+QPushButton:hover{
+	
+	background-color: rgb(0, 85, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Limpar Lista de Nível</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>_img/excluir.png</normaloff>_img/excluir.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_13">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>140</y>
+     <width>16</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>140</y>
+     <width>451</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>_img/multiplicadores.PNG</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>310</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Total de XP dos Monstros:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_total_xp_monstros">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>310</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid gray;
+border-radius: 5px;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>350</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Número de Monstros:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combo_selecionar_numero_monstros">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>350</y>
+     <width>141</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Selecionar</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3-6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7-10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>11-14</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>15 ou mais</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>380</y>
+     <width>431</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_calcular_encontro">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: rgb(85, 170, 255);
+}
+QPushButton:hover{
+	
+	background-color: rgb(0, 85, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Calcular</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>_img/calcular.png</normaloff>_img/calcular.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame_6">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>440</y>
+     <width>431</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_10">
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Resultado do nível do combate</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_Resultado_encontro">
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid gray;
+border-radius: 5px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TelaDados</class>
+ <widget class="QWidget" name="TelaDados">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>325</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>_img/icone_principal.png</normaloff>_img/icone_principal.png</iconset>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>401</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>401</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>_img/banner_dados.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Número de Faces:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Número de Dados:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combo_faces">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>100</y>
+     <width>211</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Selecionar</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 D 4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 D 6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 D 8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 D 10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 D 12</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 D 20</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="txt_numero_dados">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>140</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+border: 1px solid gray</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_rolar_dados">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>130</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	
+	background-color: rgb(141, 141, 141);
+}
+QPushButton:hover{
+	background-color: rgb(163, 0, 0);
+	color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>Rolar dados</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/dado.png</normaloff>_img/dado.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>401</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>_img/fundo_dados.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txt_resultado">
+   <property name="geometry">
+    <rect>
+     <x>173</x>
+     <y>180</y>
+     <width>211</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+border: 1px solid gray;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>210</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Resultado:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>250</y>
+     <width>371</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_limpar_tela">
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	
+	background-color: rgb(141, 141, 141);
+}
+QPushButton:hover{
+	background-color: rgb(163, 0, 0);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Limpar Tela</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>_img/eraser.png</normaloff>_img/eraser.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_sair">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>55</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	
+	background-color: rgb(141, 141, 141);
+}
+QPushButton:hover{
+	background-color: rgb(163, 0, 0);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Sair</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>_img/sair.png</normaloff>_img/sair.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>label_4</zorder>
+  <zorder>frame</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>combo_faces</zorder>
+  <zorder>txt_numero_dados</zorder>
+  <zorder>btn_rolar_dados</zorder>
+  <zorder>txt_resultado</zorder>
+  <zorder>label_5</zorder>
+  <zorder>frame_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

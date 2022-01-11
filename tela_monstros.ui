@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TelaMonstros</class>
+ <widget class="QMainWindow" name="TelaMonstros">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1061</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>_img/icone_principal.png</normaloff>_img/icone_principal.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1061</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1061</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>_img/banner_monstros.png</pixmap>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tab_monstros">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>1041</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Elephant</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(241, 241, 241);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="tab_cadastro_monstros">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>_img/monstros.png</normaloff>_img/monstros.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Monstros</string>
+     </attribute>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#5d5d5d;&quot;&gt;Identificador:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>171</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#5d5d5d;&quot;&gt;Nome do Monstro:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#5d5d5d;&quot;&gt;Tipo de Monstro:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>130</y>
+        <width>171</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#5d5d5d;&quot;&gt;Classe de Armadura:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>170</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#5d5d5d;&quot;&gt;Pontos de Vida:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>170</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#5d5d5d;&quot;&gt;Pontos de Vida Atual:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>210</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#5d5d5d;&quot;&gt;Deslocamento:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>210</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#5d5d5d;&quot;&gt;Nível de desafio:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>250</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#5d5d5d;&quot;&gt;Referência:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_id">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>50</y>
+        <width>101</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(241, 241, 241);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_nome_monstros">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>90</y>
+        <width>581</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="combo_tipo_monstro">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>130</y>
+        <width>271</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Selecionar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Aberração Miúda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Aberração Pequena</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Aberração Média</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Aberração Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Aberração Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Aberração Imensa</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Besta Miúda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Besta Média</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Besta Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Besta Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Besta Imensa</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Celestial Pequeno</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Celestial Médio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Celestial Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Celestial Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Celestial Imenso</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Constructo Miúdo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Constructo Pequeno</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Constructo Médio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Constructo Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Constructo Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Constructo Imenso</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Corruptor Miúdo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Corruptor Pequeno</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Corruptor Médio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Corruptor Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Corruptor Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Corruptor Imenso</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dragão Miúdo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dragão Médio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dragão Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dragão Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dragão Imenso</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Elemental Miúdo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Elemental Pequeno</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Elemental Médio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Elemental Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Elemental Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Elemental Imenso</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Enxame Médio de bestas Miúdas</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fada Miúda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fada Pequena</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fada Média</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fada Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fada Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fada Imensa</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gigante Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gigante Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gigante Imenso</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Humanoide Miúdo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Humanoide Pequeno</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Humanoide Médio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Humanoide Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Limo Miúdo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Limo Pequeno</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Limo Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Limo Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Limo Imenso</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Monstruosidade Miúda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Monstruosidade Pequena</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Monstruosidade Média</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Monstruosidade Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Monstruosidade Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Monstruosidade Imensa</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Morto-Vivo Miúdo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Morto_vivo Pequeno</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Morto-Vivo Médio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Morto-Vivo Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Morto-Vivo Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Morto-Vivo Imenso</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Planta Miúda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Planta Pequena</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Planta Média</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Planta Grande</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Planta Enorme</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Planta Imensa</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="txt_classe_armadura">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>130</y>
+        <width>131</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_pontos_vida">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>170</y>
+        <width>141</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_pontos_vida_atual">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>170</y>
+        <width>131</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_deslocamento">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>210</y>
+        <width>141</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_referencia">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>250</y>
+        <width>581</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_nivel_desafio">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>210</y>
+        <width>131</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>40</y>
+        <width>181</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>_img/globin.png</pixmap>
+      </property>
+     </widget>
+     <zorder>label_5</zorder>
+     <zorder>label_6</zorder>
+     <zorder>label_7</zorder>
+     <zorder>label_8</zorder>
+     <zorder>label_9</zorder>
+     <zorder>label_10</zorder>
+     <zorder>label_11</zorder>
+     <zorder>label_12</zorder>
+     <zorder>txt_id</zorder>
+     <zorder>txt_nome_monstros</zorder>
+     <zorder>combo_tipo_monstro</zorder>
+     <zorder>txt_classe_armadura</zorder>
+     <zorder>txt_pontos_vida</zorder>
+     <zorder>txt_pontos_vida_atual</zorder>
+     <zorder>txt_deslocamento</zorder>
+     <zorder>txt_referencia</zorder>
+     <zorder>txt_nivel_desafio</zorder>
+     <zorder>label_17</zorder>
+     <zorder>label_4</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_consulta_monstros">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>_img/consulta_monstros.png</normaloff>_img/consulta_monstros.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Consulta Monstros</string>
+     </attribute>
+     <widget class="QTableWidget" name="tabela_Monstros">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>1001</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nome</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Tipo</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Classe de Armadura</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Pontos de Vida</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Pontos de vida Atual</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Deslocamento</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nível de desafio</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Referência</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+     </widget>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>1001</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_carregar">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Elephant</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	color: rgb(255, 255, 255);
+	background-color: rgb(170, 0, 0);
+}
+QPushButton:hover{
+	background-color: rgb(76, 0, 227);
+}</string>
+         </property>
+         <property name="text">
+          <string>Carregar</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>_img/carregar.png</normaloff>_img/carregar.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>13</y>
+        <width>161</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pesquisar Monstro:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_pesquisar_monstro">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>291</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_pesquisar_monstros">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>10</y>
+        <width>131</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	color: rgb(255, 255, 255);
+	background-color: rgb(170, 0, 0);
+}
+QPushButton:hover{
+	background-color: rgb(76, 0, 227);
+}</string>
+      </property>
+      <property name="text">
+       <string>Pesquisar</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>_img/pesquisar.png</normaloff>_img/pesquisar.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>1041</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_limpar_tela">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	color: rgb(255, 255, 255);
+	background-color: rgb(170, 0, 0);
+}
+QPushButton:hover{
+	background-color: rgb(76, 0, 227);
+}</string>
+       </property>
+       <property name="text">
+        <string>Limpar Tela</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>_img/eraser.png</normaloff>_img/eraser.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_cadastrar">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	color: rgb(255, 255, 255);
+	background-color: rgb(170, 0, 0);
+}
+QPushButton:hover{
+	background-color: rgb(76, 0, 227);
+}</string>
+       </property>
+       <property name="text">
+        <string>Cadastrar</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>_img/cadastrar.png</normaloff>_img/cadastrar.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_alterar">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	color: rgb(255, 255, 255);
+	background-color: rgb(170, 0, 0);
+}
+QPushButton:hover{
+	background-color: rgb(76, 0, 227);
+}</string>
+       </property>
+       <property name="text">
+        <string>Alterar</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>_img/alterar.png</normaloff>_img/alterar.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_excluir">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	color: rgb(255, 255, 255);
+	background-color: rgb(170, 0, 0);
+}
+QPushButton:hover{
+	background-color: rgb(76, 0, 227);
+}</string>
+       </property>
+       <property name="text">
+        <string>Excluir</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>_img/excluir.png</normaloff>_img/excluir.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_sair">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Elephant</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	color: rgb(255, 255, 255);
+	background-color: rgb(170, 0, 0);
+}
+QPushButton:hover{
+	background-color: rgb(76, 0, 227);
+}</string>
+       </property>
+       <property name="text">
+        <string>Sair</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>_img/sair.png</normaloff>_img/sair.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1061</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuRepositorio_Monstros">
+    <property name="title">
+     <string>Repositorio Monstros</string>
+    </property>
+    <addaction name="menu_reconstrui_lista_monstros"/>
+   </widget>
+   <addaction name="menuRepositorio_Monstros"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menu_reconstrui_lista_monstros">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/dragon.png</normaloff>_img/dragon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reorganizar lista de Monstros</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>txt_id</tabstop>
+  <tabstop>txt_nome_monstros</tabstop>
+  <tabstop>combo_tipo_monstro</tabstop>
+  <tabstop>txt_classe_armadura</tabstop>
+  <tabstop>txt_pontos_vida</tabstop>
+  <tabstop>txt_pontos_vida_atual</tabstop>
+  <tabstop>txt_deslocamento</tabstop>
+  <tabstop>txt_nivel_desafio</tabstop>
+  <tabstop>txt_referencia</tabstop>
+  <tabstop>tab_monstros</tabstop>
+  <tabstop>tabela_Monstros</tabstop>
+  <tabstop>btn_carregar</tabstop>
+  <tabstop>txt_pesquisar_monstro</tabstop>
+  <tabstop>btn_pesquisar_monstros</tabstop>
+  <tabstop>btn_limpar_tela</tabstop>
+  <tabstop>btn_cadastrar</tabstop>
+  <tabstop>btn_alterar</tabstop>
+  <tabstop>btn_excluir</tabstop>
+  <tabstop>btn_sair</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

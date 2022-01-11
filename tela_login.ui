@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TelaLogin</class>
+ <widget class="QMainWindow" name="TelaLogin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>395</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>_img/icone_principal.png</normaloff>_img/icone_principal.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>401</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>_img/login.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>110</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Elephant</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Usuário:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>160</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Elephant</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Senha:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>371</width>
+      <height>57</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btn_logar">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Elephant</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font: 12pt &quot;Elephant&quot;;
+	background-color: rgb(167, 172, 172);
+	border-radius: 5px;
+	border: 1px solid
+}
+QPushButton:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(141, 0, 0);
+	border: solid 5p
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Logar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_fechar">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Elephant</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font: 12pt &quot;Elephant&quot;;
+	background-color: rgb(167, 172, 172);
+	border-radius: 5px;
+	border: 1px solid
+}
+QPushButton:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(141, 0, 0);
+	border: solid 5p
+}font: 12pt &quot;Elephant&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Fechar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="btn_lembrar_senha">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font: 12pt &quot;Elephant&quot;;
+	background-color: rgb(167, 172, 172);
+	border-radius: 5px;
+	border: 1px solid
+}
+QPushButton:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(141, 0, 0);
+	border: solid 5p
+}font: 12pt &quot;Elephant&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Lembrar Senha</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLineEdit" name="txt_usuario">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>110</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 5px;
+border:1px solid red</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_senha">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>160</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 5px;
+border:1px solid red</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>395</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConex_o">
+    <property name="title">
+     <string>Conexão</string>
+    </property>
+    <addaction name="menu_criacao_banco"/>
+    <addaction name="separator"/>
+    <addaction name="menu_sair"/>
+   </widget>
+   <addaction name="menuConex_o"/>
+  </widget>
+  <action name="menu_criacao_banco">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/banco_dados.png</normaloff>_img/banco_dados.png</iconset>
+   </property>
+   <property name="text">
+    <string>Criar estrutura de Banco de dados</string>
+   </property>
+  </action>
+  <action name="menu_sair">
+   <property name="icon">
+    <iconset>
+     <normaloff>_img/sair.png</normaloff>_img/sair.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>txt_usuario</tabstop>
+  <tabstop>txt_senha</tabstop>
+  <tabstop>btn_logar</tabstop>
+  <tabstop>btn_fechar</tabstop>
+  <tabstop>btn_lembrar_senha</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

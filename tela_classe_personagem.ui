@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TelaClasse</class>
+ <widget class="QWidget" name="TelaClasse">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>670</width>
+    <height>451</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>_img/icone_principal.png</normaloff>_img/icone_principal.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>671</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>671</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>_img/banner_classe.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Classe:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_nome_classe">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>160</y>
+     <width>191</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabela_classe">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>230</y>
+     <width>311</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Classe</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Referência</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Referência:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_referencia">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>190</y>
+     <width>191</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>140</y>
+     <width>121</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_pesquisar">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	
+	background-color: rgb(141, 141, 141);
+}
+QPushButton:hover{
+	background-color: rgb(163, 0, 0);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Pesquisar</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>_img/pesquisar.png</normaloff>_img/pesquisar.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_carregar">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	
+	background-color: rgb(141, 141, 141);
+}
+QPushButton:hover{
+	background-color: rgb(163, 0, 0);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Carregar</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>_img/carregar.png</normaloff>_img/carregar.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_cadastrar">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	
+	background-color: rgb(141, 141, 141);
+}
+QPushButton:hover{
+	background-color: rgb(163, 0, 0);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Cadastrar</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>_img/cadastrar.png</normaloff>_img/cadastrar.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_excluir">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	
+	background-color: rgb(141, 141, 141);
+}
+QPushButton:hover{
+	background-color: rgb(163, 0, 0);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Excluir</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>_img/excluir.png</normaloff>_img/excluir.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_sair">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	
+	background-color: rgb(141, 141, 141);
+}
+QPushButton:hover{
+	background-color: rgb(163, 0, 0);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Sair</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>_img/sair.png</normaloff>_img/sair.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_limpar_tela">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Elephant</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 5px;
+	border: 1px solid gray;
+	
+	background-color: rgb(141, 141, 141);
+}
+QPushButton:hover{
+	background-color: rgb(163, 0, 0);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Limpar tela</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>_img/eraser.png</normaloff>_img/eraser.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>170</y>
+     <width>151</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>_img/classe.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>130</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Elephant</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ID:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_id">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>130</y>
+     <width>71</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+border:1px solid gray;
+background-color: rgb(255, 255, 255);
+background-color: rgb(241, 241, 241);</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txt_id</tabstop>
+  <tabstop>txt_nome_classe</tabstop>
+  <tabstop>txt_referencia</tabstop>
+  <tabstop>btn_pesquisar</tabstop>
+  <tabstop>btn_cadastrar</tabstop>
+  <tabstop>btn_excluir</tabstop>
+  <tabstop>btn_sair</tabstop>
+  <tabstop>tabela_classe</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
